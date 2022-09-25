@@ -30,18 +30,26 @@ If you're using the HiFiBerry DAC+ Zero, you'll also need to make these changes:
 	 type hw card 0
 	}
 To get the composite video output, I actually didn't have a headphone jack laying around, so I soldered a wire to pad PP24 on the bottom of the board, PP6 right below it is a convenient ground connection nearby. [This guide](https://forums.raspberrypi.com/viewtopic.php?t=89522) was super helpful in figuring out which pads to use.
+
 To get audio out, I soldered wires to the HiFiBerry DAC+ pads labelled L, GND, and R. The only reason I used the DAC hat in the first place is because I didn't have a 4-pole 3.5mm jack laying around, but I did have the DAC hat and hadn't found a use for it in years.
+
 To power the pi, I used a 5V 3A buck converter to step down the 19V input to 5V. Since I didn't have the physical space for a microusb connector in the radio, and the gpio pins were all occupied, I soldered 5V to pad PP2 and GND to pad PP5.
+
 ## Universal RF Modulator
 For this piece, I basically just removed the housing, 12V transformer, and all the connectors and soldered wires to the board for audio, video, and power input, and TV output. The inputs and outputs were easy, just solder to the points where the connectors had been. For power, my model actually had an unpopulated spot for a DC jack, so I just soldered wires to where that would have been.  Finally the board was hot glued into an open area inside the radio.
 ## TV Radio
 There really wasn't a lot I did to the TV radio, I removed the power supply section, replaced the IO panel, and connected the output of the RF modulator to the VHF input. 
+
 The power section was super easy, it was it's own PCB and a transformer. I simply unplugged it from the main board and tossed it.
+
 The IO panel was a massive stroke of luck, it simply slid out so I didn't even have to cut anything to replace it. I modeled it in Fusion 360 (files above), added some cutouts for the raspberry pi USB and ethernet connectors and a DC jack, and 3D printed a replacement. ***(Need to add the files once I've revised them a bit)*** I also 3D printed a mount for the pi so it just connects to the IO panel and can be slid in and out.
+
 The UHF/VHF input board that used to be connected to the IO panel was tucked back into the radio body and the wires from the TV output of the RF modulator were soldered to the VHF antenna inputs. The UHF antenna inputs were left unpopulated and the switch was hot glued into the VHF position. 
+
 I also cleaned the radio, it was pretty dirty after 20 years of use and another 20 of storage in a basement.
 
 That's it, it was actually a surprisingly easy project. Now I have a raspberry pi 3B+ inside a 40 year old TV radio unit to play with. I do still need to adjust and reprint the IO panel so the pi mount fits better and it's not such a garish color.
+
 # Gallery
 ### Finished product
 ![](pictures/finished.jpg?raw=true)
