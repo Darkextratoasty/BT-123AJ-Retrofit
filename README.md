@@ -48,6 +48,7 @@ The UHF/VHF input board that used to be connected to the IO panel was tucked bac
 
 I also cleaned the radio, it was pretty dirty after 20 years of use and another 20 of storage in a basement.
 
+## Done
 That's it, it was actually a surprisingly easy project. Now I have a raspberry pi 3B+ inside a 40 year old TV radio unit to play with. I do still need to adjust and reprint the IO panel so the pi mount fits better and it's not such a garish color.
 
 # Gallery
