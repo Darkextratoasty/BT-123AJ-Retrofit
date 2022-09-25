@@ -42,7 +42,7 @@ There really wasn't a lot I did to the TV radio, I removed the power supply sect
 
 The power section was super easy, it was it's own PCB and a transformer. I simply unplugged it from the main board and tossed it.
 
-The IO panel was a massive stroke of luck, it simply slid out so I didn't even have to cut anything to replace it. I modeled it in Fusion 360, added some cutouts for the raspberry pi USB and ethernet connectors and a DC jack, and 3D printed a replacement. The .stls and Fusion 360 files for the IO panel with cutout and blank, and the pi mount are ![here.](/3d files/needtoaddfiles.txt) ***(Need to add the files once I've revised them a bit)*** I also 3D printed a mount for the pi so it just connects to the IO panel and can be slid in and out.
+The IO panel was a massive stroke of luck, it simply slid out so I didn't even have to cut anything to replace it. I modeled it in Fusion 360, added some cutouts for the raspberry pi USB and ethernet connectors and a DC jack, and 3D printed a replacement. The .stls and Fusion 360 files for the IO panel with cutout and blank, and the pi mount are in the `3d files` folder. ***(Need to add the files once I've revised them a bit)*** I also 3D printed a mount for the pi so it just connects to the IO panel and can be slid in and out.
 
 The UHF/VHF input board that used to be connected to the IO panel was tucked back into the radio body and the wires from the TV output of the RF modulator were soldered to the VHF antenna inputs. The UHF antenna inputs were left unpopulated and the switch was hot glued into the VHF position. 
 
