@@ -26,13 +26,12 @@ If you're using the HiFiBerry DAC+ Zero, you'll also need to make these changes:
 * Add `dtoverlay=hifiberry-dac` to enable the DAC
 * Change `dtoverlay=vc4-kms-v3d,composite` to `dtoverlay=vc4-kms-v3d,composite,audio=off` to disable the audio output on the headphone jack
 * Create a file called `/etc/asound.conf` and paste the following into it:
-```pcm.!default {
- type hw card 0
-}
-ctl.!default {
- type hw card 0
-}```
-
+ ```pcm.!default {
+  type hw card 0
+ }
+ ctl.!default {
+  type hw card 0
+ }
 To get the composite video output, I actually didn't have a headphone jack laying around, so I soldered a wire to pad PP24 on the bottom of the board, PP6 right below it is a convenient ground connection nearby. [This guide](https://forums.raspberrypi.com/viewtopic.php?t=89522) was super helpful in figuring out which pads to use.
 
 To get audio out, I soldered wires to the HiFiBerry DAC+ pads labelled L, GND, and R. The only reason I used the DAC hat in the first place is because I didn't have a 4-pole 3.5mm jack laying around, but I did have the DAC hat and hadn't found a use for it in years.
