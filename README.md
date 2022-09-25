@@ -10,6 +10,9 @@ This is an old Samsung BT-123AJ TV radio from 1982 with a Raspberry Pi Model 3B+
 * 12V buck converter (doesn't need much current, but the cleaner the 12V output the better)
 * DC barrel plug + jack (or whatever power plug you want to use)
 
+# General Schematic
+![](TV Radio Retrofit.png?raw=true)
+
 # Modifications
 ## Raspberry Pi
 Since the RF modulator takes in composite video, the pi needs to be set up to output that instead of HDMI. This is actually pretty easy to do, just edit the `/boot/config.txt` file with these changes:
