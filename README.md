@@ -11,7 +11,7 @@ This is an old Samsung BT-123AJ TV radio from 1982 with a Raspberry Pi Model 3B+
 * DC barrel plug + jack (or whatever power plug you want to use)
 
 # General Schematic
-![](TV Radio Retrofit.png?raw=true)
+![](TVRadioRetrofit.png?raw=true)
 
 # Modifications
 ## Raspberry Pi
